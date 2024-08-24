@@ -7,12 +7,13 @@ def rot (matrix, degrees):
     while (degrees > 360):
         degrees -= 360
 
-    l = 0
-    t = 0
-    r = n - 1
-    b = n - 1
-
     while (degrees > 0):
+        
+        l = 0
+        t = 0
+        r = n - 1
+        b = n - 1
+        
         while (l < r):
             for i in range (r - l):
                 x = matrix [t][l + i]
